@@ -19,10 +19,12 @@ cv2.imshow('original image', img)
 
 # Convert to HSI => ?
 convert_image_hsi = hsi.RGB_TO_HSI(img)
+# convert_image_hsi = cv2.cvtColor(img, cv2.COLOR_BGR2HLS)
 cv2.imshow('hsi image', convert_image_hsi)
 
 # Convert to HSV => ?
 convert_image_hsv = hsv.RGB_TO_HSV(img)
+# convert_image_hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 cv2.imshow('hsv image', convert_image_hsv)
 
 # Convert to CMYK => True
